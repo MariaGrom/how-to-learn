@@ -9,11 +9,12 @@
     font-family: 'Helvetica Neue', Arial, sans-serif;
   }
   
+  /* Заголовок */
+
   .header {
     height: 100vh;
     min-height: 600px;
     max-height: 756px;
-    /* выше установили ограничения для секции */
     display: flex;
     position: relative;
     background-color: #f2f2f2;
@@ -73,8 +74,6 @@
     z-index: 1;
     padding: 0 0;
   }
-
-  /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
   
   .header__square-pic {
     position: absolute;
@@ -87,6 +86,8 @@
     padding: 0 0;
   }
   
+/* Блок "Главные проблемы обучения"*/
+
   .description {
     display: flex; 
     justify-content: center;
@@ -137,6 +138,8 @@
   margin: 30px 0;
 }
 
+/*Блок Цифры и числа*/
+
   .digits {
     border: 1px solid red;
     display: flex;
@@ -149,14 +152,22 @@
     margin-top: 100px;
     margin-bottom: 0;
     text-align: center;
+
+    line-height: 1.15; 
+    font-size: 60px;
+    font-weight: bold;
     border: 1px solid red;
   }
 
-  .section-subtitle_theme_ligth{
+  .section-subtitle_theme_light{
     width: 60%;
     margin-top: 20px;
     margin-bottom: 0;
     text-align: center;
+
+    line-height: 34px; 
+    font-size: 24px;
+    font-weight: normal;
     border: 1px solid red;
   }
 
@@ -202,6 +213,149 @@
     border: 1px solid red;
   }
 
+  .section-table__cell_theme_light_bank{
+    line-height: 1.2; 
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0 0;
+    border: 1px solid red;
+  }
+
+  /*Блок Феймана*/
+
+  .feyman{
+    background-color: #f2f2f2;
+    height: 890px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border: 1px solid red;
+  }
+
+  .feyman__title{
+    width: 648px;
+    margin-top: 100px;
+    margin-bottom: 0;
+    text-align: center;
+    z-index:2;
+
+    line-height: 1.15; 
+    font-size: 120px;
+    font-weight: bold;
+    padding: 0 0;
+    border: 1px solid red;
+  }
+
+  .feyman__subtitle{
+    z-index:2;
+    line-height: 51px; 
+    font-size: 36px;
+    font-weight: normal;
+    margin-top: 70px;
+    padding: 0 0;
+    border: 1px solid red;
+  }
+
+  .feyman__main-illustration{
+    width: 867px;
+    height: 637px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border: 1px solid red;
+  }
+
+   .feyman__link{ /* нужно пристроить ссылку вправый край*/
+    position: absolute;
+    top: 50%;
+    right: 48px;
+    padding: 0 0;
+    line-height: 51px; 
+    font-size: 36px;
+    font-weight: normal;
+    color:#2f80ed;
+    text-decoration: none;
+    border: 1px solid red;
+   }
+
+/*Блок Кауфмана */
+
+.kaufman {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title_theme_dark{
+  width: 60%;
+  margin-top: 90px;
+  margin-bottom: 0;
+  text-align: center;
+
+  color:white;
+  line-height: 1.15; 
+  font-size: 60px;
+  font-weight: bold;
+  border: 1px solid red;
+}
+
+.section-subtitle_theme_dark{
+  width: 60%;
+  margin-top: 20px;
+  margin-bottom: 0;
+  text-align: center;
+
+  color:white;
+  line-height: 34px; 
+  font-size: 24px;
+  font-weight: normal;
+  border: 1px solid red;
+}
+
+.section-table_theme_dark{
+  width: 1100px; /*ширина блока здесь не задана. Времено взято из блока Диджтл*/
+  margin-top: 0;
+  margin-bottom: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 0;
+
+  border: 1px solid red;
+}
+
+.section-table__cell_theme_dark{
+  width: 200px;
+  list-style: none;
+  color: white;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 80px;
+  padding: 0 0;
+  border: 1px solid red;
+}
+
+.section-table__cell_theme_dark_text {
+  color: white;
+  line-height: 1.2; 
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 20px;
+  padding: 0 0;
+  border: 1px solid red;
+}
+.section-table__heading_theme_dark{
+
+}
+
+
+
   /* и элемента с модификатором вида ключ-значение */
   .table__cell_theme_dark {
     width: 200px;
@@ -215,12 +369,6 @@
     height: 500px;
   }
   
-
-
-
-  .feyman {
-    background-color: #f2f2f2;
-  }
 
   .kaufman {
     background-color: #1f1f1f;
